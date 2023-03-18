@@ -39,7 +39,7 @@ _veh addEventHandler ["HandleDamage", {
 			_isCrash = true;
 		};
 		if(_isCrash) then {
-			if (_veh getVariable "r0ed_SurvivableCrashes_NotShotDown") then {
+			if (_veh getVariable ["r0ed_SurvivableCrashes_NotShotDown", false]) then {
 				_veh setVariable ["r0ed_SurvivableCrashes_NotShotDown", false];
 				[_veh, _this] call r0ed_SurvivableCrashes_OnVehicleCrash;
 			};

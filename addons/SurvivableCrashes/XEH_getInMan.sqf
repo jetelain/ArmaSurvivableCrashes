@@ -1,4 +1,4 @@
-params ["_unit", "_unused1", "_veh"];
+params ["_unit", "", "_veh"];
 
 if(hasInterface) then {
 	if(_unit == player) then {
