@@ -11,6 +11,6 @@ _logic = param [0,objNull,[objNull]];
 	compile (_logic getVariable "OnCrashCode"),
 	compile (_logic getVariable "CrewPostCrashCode"),
 	compile (_logic getVariable "VehicleRestCode")
-] call compile preprocessFileLineNumbers "\r0ed_SurvivableCrashes\functions\init\init_survivableCrashes.sqf";
+] call compile preprocessFileLineNumbers "\z\r0ed\addons\SurvivableCrashes\functions\init\init_survivableCrashes.sqf";
 
 missionNamespace setVariable["r0ed_SurvivableCrashes_Initialized", true];

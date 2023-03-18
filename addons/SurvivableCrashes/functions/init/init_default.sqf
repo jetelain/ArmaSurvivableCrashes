@@ -15,4 +15,4 @@ if(missionNamespace getVariable ["r0ed_SurvivableCrashes_Initialized", false]) e
 		_veh allowDamage true;
 		_veh setDamage 1;
 	}
-] call compile preprocessFileLineNumbers "\r0ed_SurvivableCrashes\functions\init\init_survivableCrashes.sqf"
+] call compile preprocessFileLineNumbers "\z\r0ed\addons\SurvivableCrashes\functions\init\init_survivableCrashes.sqf"

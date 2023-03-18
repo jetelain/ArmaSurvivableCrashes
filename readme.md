@@ -2,7 +2,7 @@
 
 **Authors:** Rafael09ED, Arend
 
-**Version:** 1.2.1
+**Version:** 1.3.1
 
 Allows the crew of a vehicle to survive it's destruction and escape harmed. 
 

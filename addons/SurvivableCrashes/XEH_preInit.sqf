@@ -1,6 +1,6 @@
-r0ed_SurvivableCrashes_OnVehicleCrash = compileFinal preprocessFileLineNumbers "\r0ed_SurvivableCrashes\functions\fn_onVehicleCrash.sqf";
-r0ed_SurvivableCrashes_VehicleInit = compileFinal preprocessFileLineNumbers "\r0ed_SurvivableCrashes\functions\fn_vehicleInit.sqf";
-r0ed_SurvivableCrashes_PlaySfx = compileFinal preprocessFileLineNumbers "\r0ed_SurvivableCrashes\functions\fn_playSfx.sqf";
+r0ed_SurvivableCrashes_OnVehicleCrash = compileFinal preprocessFileLineNumbers "\z\r0ed\addons\SurvivableCrashes\functions\fn_onVehicleCrash.sqf";
+r0ed_SurvivableCrashes_VehicleInit = compileFinal preprocessFileLineNumbers "\z\r0ed\addons\SurvivableCrashes\functions\fn_vehicleInit.sqf";
+r0ed_SurvivableCrashes_PlaySfx = compileFinal preprocessFileLineNumbers "\z\r0ed\addons\SurvivableCrashes\functions\fn_playSfx.sqf";
 
 if (isClass (configfile >> "CfgPatches" >> "cba_settings")) then {
 	private _settings = [
@@ -109,7 +109,7 @@ if (isClass (configfile >> "CfgPatches" >> "cba_settings")) then {
 		compile r0ed_SurvivableCrashes_onCrashCode,
 		compile r0ed_SurvivableCrashes_onPostCrashCode,
 		compile r0ed_SurvivableCrashes_vehicleRestCode
-	] call compile preprocessFileLineNumbers "\r0ed_SurvivableCrashes\functions\init\init_survivableCrashes.sqf";
+	] call compile preprocessFileLineNumbers "\z\r0ed\addons\SurvivableCrashes\functions\init\init_survivableCrashes.sqf";
 
 	// Log the details
 	[format ["CBA Settings: %1", [

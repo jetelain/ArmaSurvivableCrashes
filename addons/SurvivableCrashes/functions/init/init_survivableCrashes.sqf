@@ -34,7 +34,7 @@ missionNamespace setVariable ["r0ed_SurvivableCrashesVar_CrewPostCrashCode", _cr
 missionNamespace setVariable ["r0ed_SurvivableCrashesVar_VehicleRestCode", _vehicleRestCode];
 
 if(hasInterface) then {
-	[player] execVM "\r0ed_SurvivableCrashes\functions\fn_handleUnitDamage.sqf";
+	[player] execVM "\z\r0ed\addons\SurvivableCrashes\functions\fn_handleUnitDamage.sqf";
 };
 {
     _unit = _x;

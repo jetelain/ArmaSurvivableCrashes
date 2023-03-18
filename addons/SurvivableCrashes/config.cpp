@@ -1,16 +1,19 @@
-#define _ARMA_
+#include "script_component.hpp"
+
 class DefaultEventhandlers;
-class CfgPatches
-{
-    class r0ed_SurvivableCrashes
-    {
+
+class CfgPatches {
+    class ADDON {
+        name = QUOTE(COMPONENT);
         units[] = {"r0ed_ModuleSurvivableCrashes"};
-        requiredVersion = 1.0;
-        requiredAddons[] = {"A3_Modules_F", "cba_settings"};
-		projectName = "Survivable Crashes";
-		author = "Rafael09ED";
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {};
+        author = "Rafael09ED";
+        VERSION_CONFIG;
     };
 };
+
 class CfgFactionClasses
 {
 	class NO_CATEGORY;
@@ -19,6 +22,7 @@ class CfgFactionClasses
 		displayName = "Survivable Crashes";
 	};
 };
+
 class CfgVehicles
 {
 	class Logic;
@@ -135,12 +139,12 @@ class CfgVehicles
 };
 class Extended_PostInit_EventHandlers {
     class r0ed_SurvivableCrashes_XEH_PostInit {
-        init = "call compile preprocessFileLineNumbers '\r0ed_SurvivableCrashes\XEH_postInit.sqf'";
+        init = "call compile preprocessFileLineNumbers '\z\r0ed\addons\SurvivableCrashes\XEH_postInit.sqf'";
     };
 };
 class Extended_PreInit_EventHandlers {
     class r0ed_SurvivableCrashes_XEH_PreInit {
-        init = "call compile preprocessFileLineNumbers '\r0ed_SurvivableCrashes\XEH_preInit.sqf'";
+        init = "call compile preprocessFileLineNumbers '\z\r0ed\addons\SurvivableCrashes\XEH_preInit.sqf'";
     };
 };
 class CfgFunctions
@@ -150,18 +154,18 @@ class CfgFunctions
 		tag = "r0ed";
 		class SurvivableCrashesInit
 		{
-		    file = "\r0ed_SurvivableCrashes\functions\init";
+		    file = "\z\r0ed\addons\SurvivableCrashes\functions\init";
 			class moduleSurvivableCrashes{};
 		};
 		class SurvivableCrashes
 		{
-			file = "\r0ed_SurvivableCrashes\functions";
+			file = "\z\r0ed\addons\SurvivableCrashes\functions";
 			class vehicleCrashLocal{};
 			class crashVisualEffects{};
 		};
 		class util
 		{
-			file = "\r0ed_SurvivableCrashes\functions\util";
+			file = "\z\r0ed\addons\SurvivableCrashes\functions\util";
 			class log {};
 		};
 	};
@@ -170,14 +174,14 @@ class CfgSounds {
 	class AutorotationWarn
 	{
 		name = "AutorotationWarn";
-		sound[]={"\r0ed_SurvivableCrashes\sounds\ACE_AutorotationWarning.ogg", 4, 1};
+		sound[]={"\z\r0ed\addons\SurvivableCrashes\sounds\ACE_AutorotationWarning.ogg", 4, 1};
 		titles[]={};
 	};
 };
 class Extended_GetInMan_EventHandlers {
     class CAManBase {
         class r0ed_SurvivableCrashes_XEH_GetInMan {
-            getInMan = "call compile preprocessFileLineNumbers '\r0ed_SurvivableCrashes\XEH_getInMan.sqf'";
+            getInMan = "call compile preprocessFileLineNumbers '\z\r0ed\addons\SurvivableCrashes\XEH_getInMan.sqf'";
         };
     };
 };

@@ -1,1 +1,1 @@
-[] execVM "\r0ed_SurvivableCrashes\functions\init\init_default.sqf";
+[] execVM "\z\r0ed\addons\SurvivableCrashes\functions\init\init_default.sqf";

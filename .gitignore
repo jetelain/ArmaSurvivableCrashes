@@ -7,3 +7,9 @@ archives/
 .vscode
 *.log
 .build/
+releases/*
+*.biprivatekey
+keys/*
+.hemtt/local
+/.vs
+*.exe

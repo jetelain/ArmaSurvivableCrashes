@@ -1,0 +1,15 @@
+name = "Arma Survivable Crashes"
+prefix = "r0ed"
+author = "Rafael09ED"
+template = "cba"
+mainprefix = "z"
+sig_version = 3
+files = [
+    "mod.cpp",
+    "logo.paa"
+]
+exclude = [
+    "*.psd",
+    "*.png",
+    "*.tga"
+]
